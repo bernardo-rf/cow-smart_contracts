@@ -39,12 +39,12 @@
 					},
 					{
 						"internalType": "int256",
-						"name": "_idBovineParent1",
+						"name": "_idBovineParentOne",
 						"type": "int256"
 					},
 					{
 						"internalType": "int256",
-						"name": "_idBovineParent2",
+						"name": "_idBovineParentTwo",
 						"type": "int256"
 					},
 					{
@@ -97,7 +97,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getIDBovineParent1",
+				"name": "getIDBovineParentOne",
 				"outputs": [
 					{
 						"internalType": "int256",
@@ -110,7 +110,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getIDBovineParent2",
+				"name": "getIDBovineParentTwo",
 				"outputs": [
 					{
 						"internalType": "int256",
@@ -216,11 +216,11 @@
 				"inputs": [
 					{
 						"internalType": "int256",
-						"name": "_idBovineParent1",
+						"name": "_idBovineParentOne",
 						"type": "int256"
 					}
 				],
-				"name": "setIDBovineParent1",
+				"name": "setIDBovineParentOne",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -229,11 +229,11 @@
 				"inputs": [
 					{
 						"internalType": "int256",
-						"name": "_idBovineParent2",
+						"name": "_idBovineParentTwo",
 						"type": "int256"
 					}
 				],
-				"name": "setIDBovineParent2",
+				"name": "setIDBovineParentTwo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -299,7 +299,7 @@
 					},
 					{
 						"internalType": "int256",
-						"name": "idField",
+						"name": "_idField",
 						"type": "int256"
 					},
 					{
@@ -342,11 +342,11 @@
 	},
 	"sources": {
 		"contracts/Bovine.sol": {
-			"keccak256": "0xecea8f8365d2076a727f24973fb186406bc46966963fafcd10d67a7e0139ff01",
+			"keccak256": "0xc08d29d3032b12d94d17b71867c9504bc3056699f00c4028f329cd75bb3cff90",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://01dd967270f0ed35e110668f48911b9213f0bf68570a2a6dc15b0da1f2de8957",
-				"dweb:/ipfs/Qmf9YTYtAVXRTzLJUZchpY5PZnE5cdTDCr346piUuLkHGE"
+				"bzz-raw://b8eec3cfb5a610261d2cad42321b0e0c1ef63aa1ead1913d56b439d148173e77",
+				"dweb:/ipfs/QmWqqEbrmwmNVTZif2ERSo6pAKWRbspDaWE8in4jRJQQU5"
 			]
 		}
 	},

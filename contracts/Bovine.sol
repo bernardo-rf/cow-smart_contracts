@@ -15,28 +15,28 @@ contract Bovine {
 
     string observation;
 
-    int idBovineParent1;
+    int idBovineParentOne;
 
-    int idBovineParent2;
+    int idBovineParentTwo;
 
     bool gender;
 
     constructor(string memory _idOwner, int _idField, int _serialNumber, string memory _birthDate, bool _active, string memory _observation, 
-                int _idBovineParent1, int _idBovineParent2, bool _gender) public {
+                int _idBovineParentOne, int _idBovineParentTwo, bool _gender) {
         idOwner = _idOwner;
         idField = _idField;
         serialNumber = _serialNumber;
         birthDate = _birthDate;
         active = _active;
         observation = _observation;
-        idBovineParent1 = _idBovineParent1;
-        idBovineParent2 = _idBovineParent2;
+        idBovineParentOne = _idBovineParentOne;
+        idBovineParentTwo = _idBovineParentTwo;
         gender = _gender;
     }
 
-    function setUpdate(string memory _idOwner, int idField, bool _active) public {
+    function setUpdate(string memory _idOwner, int _idField, bool _active) public {
         idOwner = _idOwner;
-        active = _active;
+        idField = _idField;
         active = _active;
     }
 
@@ -88,20 +88,20 @@ contract Bovine {
         return observation;
     }
 
-    function setIDBovineParent1(int _idBovineParent1) public {
-        idBovineParent1 = _idBovineParent1;
+    function setIDBovineParentOne(int _idBovineParentOne) public {
+        idBovineParentOne = _idBovineParentOne;
     }
 
-    function getIDBovineParent1() public view returns (int) {
-        return idBovineParent1;
+    function getIDBovineParentOne() public view returns (int) {
+        return idBovineParentOne;
     }
 
-    function setIDBovineParent2(int _idBovineParent2) public {
-        idBovineParent2 = _idBovineParent2;
+    function setIDBovineParentTwo(int _idBovineParentTwo) public {
+        idBovineParentTwo = _idBovineParentTwo;
     }
 
-    function getIDBovineParent2() public view returns (int) {
-        return idBovineParent2;
+    function getIDBovineParentTwo() public view returns (int) {
+        return idBovineParentTwo;
     }
 
     function setGender(bool _gender) public {

@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-contract Field{
+contract Field {
 
     string fieldDescription;
 
@@ -67,7 +67,4 @@ contract Field{
     function getObservation() public view returns (string memory) {
         return observation;
     }
-
-   
-
 }
