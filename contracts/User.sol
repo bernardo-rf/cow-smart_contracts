@@ -15,19 +15,23 @@ contract User {
 
     bool active;
 
-    constructor(int _idUserType, string memory _name, string memory _birthDate, string memory _email, string memory _password, bool _active) {
+    string balance;
+
+    constructor(int _idUserType, string memory _name, string memory _birthDate, string memory _email, string memory _password, bool _active, string memory _balance) {
         idUserType = _idUserType;
         name = _name;
         birthDate = _birthDate;
         email = _email;
         password = _password;
         active = _active;
+        balance = _balance;
     }
 
-    function setUpdate(int _idUserType, string memory _name, bool _active) public {
+    function setUpdate(int _idUserType, string memory _name, bool _active, string memory _balance) public {
         idUserType = _idUserType;
         name = _name;
         active = _active;
+        balance = _balance;
     }
 
     function setIDUserType(int _idUserType) public {
@@ -62,11 +66,27 @@ contract User {
         return email;
     }
 
+    function setPassword(string memory _password) public {
+        password = _password;
+    }
+
+    function getPassword() public view returns (string memory) {
+        return password;
+    }
+
     function setActive(bool _active) public {
         active = _active;
     }
 
     function getActive() public view returns (bool) {
         return active;
+    }
+
+    function setBalance(string memory _balance) public {
+        balance = _balance;
+    }
+
+    function getBalance() public view returns (string memory) {
+        return balance;
     }
 }

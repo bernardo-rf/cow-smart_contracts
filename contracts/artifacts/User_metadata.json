@@ -36,6 +36,11 @@
 						"internalType": "bool",
 						"name": "_active",
 						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_balance",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -49,6 +54,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -107,6 +125,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getPassword",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bool",
@@ -115,6 +146,19 @@
 					}
 				],
 				"name": "setActive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_balance",
+						"type": "string"
+					}
+				],
+				"name": "setBalance",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -174,6 +218,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_password",
+						"type": "string"
+					}
+				],
+				"name": "setPassword",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "int256",
 						"name": "_idUserType",
 						"type": "int256"
@@ -187,6 +244,11 @@
 						"internalType": "bool",
 						"name": "_active",
 						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_balance",
+						"type": "string"
 					}
 				],
 				"name": "setUpdate",
@@ -223,11 +285,11 @@
 	},
 	"sources": {
 		"contracts/User.sol": {
-			"keccak256": "0xfb395aa52d53141be9372895a3d39cd440fdde1fb11bc60277b8e92c57ac4132",
+			"keccak256": "0x4c248c1d3cea8511754008944498a3afe539d021905dd9b0c20e8504be34ee72",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://1e6c754fec092da29055625ad8c2a07c2f99aa176585c1714df66535d2d3acfe",
-				"dweb:/ipfs/QmfUGWzQ7nWKDdnhW4MJcVsA8kfcn5LqGU9hbdEjjd9pJd"
+				"bzz-raw://834132c8c1084ebcf0e449bba56066bd268f6e865b509ce934727f0eb932b0f5",
+				"dweb:/ipfs/QmTKy6fgW9xLaEyxVVSFf2WGtRBKVAS3LxeeCUyo5mTsrg"
 			]
 		}
 	},

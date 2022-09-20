@@ -31,6 +31,11 @@
 						"internalType": "string",
 						"name": "_observation",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_idOwner",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -52,6 +57,19 @@
 			{
 				"inputs": [],
 				"name": "getFieldDescription",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIDOwner",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -131,6 +149,19 @@
 				"inputs": [
 					{
 						"internalType": "string",
+						"name": "_idOwner",
+						"type": "string"
+					}
+				],
+				"name": "setIDOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
 						"name": "_latitude",
 						"type": "string"
 					}
@@ -187,9 +218,14 @@
 						"internalType": "bool",
 						"name": "_active",
 						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_idOwner",
+						"type": "string"
 					}
 				],
-				"name": "updateField",
+				"name": "setUpdate",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -223,11 +259,11 @@
 	},
 	"sources": {
 		"contracts/Field.sol": {
-			"keccak256": "0x15dc3e4f70c471cccdaf224835bab7fd94c462a5fb26418f40d624407fab542c",
+			"keccak256": "0x56d3344c6a593fe4c7c90ed8032f6ae08d93b440e65c4068a5296ef36e3a5731",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://312918e664e32196fe5a891cedc8ebf7efa3252d4b91ee01fe138a14a61ff3fa",
-				"dweb:/ipfs/QmT8Zg8JdtBgnaYxZTZkukBx43oAifMBTYyNN3iTarwHpa"
+				"bzz-raw://06f261f5ebc8d9791058c3a4820a6036633e4b840b003cb81632c7be9d342173",
+				"dweb:/ipfs/QmWV5QP2d8AAitCyeiWGfdtEZRr5AYobtJxfpmfY6t393D"
 			]
 		}
 	},
