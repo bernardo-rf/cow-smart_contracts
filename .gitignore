@@ -7,3 +7,4 @@ TODO
 .idea
 .vscode
 docs/_build
+contracts/artifacts/build-info
