@@ -1,0 +1,261 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_idBovine",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_idVeterinary",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "_appointmentDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_appointmentType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_cost",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_observation",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getAppointmentDate",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAppointmentType",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCost",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIDBovine",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIDVeterinary",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getObservation",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_appointmentDate",
+						"type": "string"
+					}
+				],
+				"name": "setAppointmentDate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_appointmentType",
+						"type": "string"
+					}
+				],
+				"name": "setAppointmentType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_cost",
+						"type": "string"
+					}
+				],
+				"name": "setCost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_idBovine",
+						"type": "int256"
+					}
+				],
+				"name": "setIDBovine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_idVeterinary",
+						"type": "int256"
+					}
+				],
+				"name": "setIDVeterinary",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_observation",
+						"type": "string"
+					}
+				],
+				"name": "setObservation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_idBovine",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_idVeterinary",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "_appointmentDate",
+						"type": "string"
+					}
+				],
+				"name": "setUpdate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Appointment.sol": "Appointment"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Appointment.sol": {
+			"keccak256": "0xaf5d31992014617749dc59c4d9b981b721254a0d25e19c139588833158928307",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bd29b0200406efb1786da35e113a29bbd05f59ce0bf33def130dd98ff29055b3",
+				"dweb:/ipfs/Qmc3ETZEwzChYDZskD2Wb1YxD3asGnsq4i7DvRNEUZH4Ub"
+			]
+		}
+	},
+	"version": 1
+}
