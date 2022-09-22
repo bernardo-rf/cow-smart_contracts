@@ -27,11 +27,10 @@ contract User {
         balance = _balance;
     }
 
-    function setUpdate(int _idUserType, string memory _name, bool _active, string memory _balance) public {
+    function setUpdate(int _idUserType, string memory _name, bool _active) public {
         idUserType = _idUserType;
         name = _name;
         active = _active;
-        balance = _balance;
     }
 
     function setIDUserType(int _idUserType) public {

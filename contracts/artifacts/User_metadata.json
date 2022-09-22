@@ -244,11 +244,6 @@
 						"internalType": "bool",
 						"name": "_active",
 						"type": "bool"
-					},
-					{
-						"internalType": "string",
-						"name": "_balance",
-						"type": "string"
 					}
 				],
 				"name": "setUpdate",
@@ -285,11 +280,11 @@
 	},
 	"sources": {
 		"contracts/User.sol": {
-			"keccak256": "0x4c248c1d3cea8511754008944498a3afe539d021905dd9b0c20e8504be34ee72",
+			"keccak256": "0x49dcde54a197013574d13d686b6e5873b33fd220a7edb384cbcd6dabb67b91cb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://834132c8c1084ebcf0e449bba56066bd268f6e865b509ce934727f0eb932b0f5",
-				"dweb:/ipfs/QmTKy6fgW9xLaEyxVVSFf2WGtRBKVAS3LxeeCUyo5mTsrg"
+				"bzz-raw://9d1108db3f1dce4b5d51bd363d30f90eec4849fdfbaba0386deed304e6513bd3",
+				"dweb:/ipfs/QmQkzVZ9wj7HvVd5xvgUdYQbbhfKUt9kDTgfnagifQsXMc"
 			]
 		}
 	},
