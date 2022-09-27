@@ -2,55 +2,55 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Appointment{
-    int idBovine;
+    uint256 idBovine;
 
-    int idVeterinary;
+    uint256 idUser;
 
-    string appointmentDate;
+    uint256 appointmentDate;
 
     string appointmentType;
 
-    string cost;
+    uint256 cost;
 
     string observation;
 
-    constructor(int _idBovine,int _idVeterinary, string memory _appointmentDate, string memory _appointmentType, string memory _cost, 
+    constructor(uint256 _idBovine, uint256 _idUser, uint256 _appointmentDate, string memory _appointmentType, uint256 _cost, 
                 string memory _observation) {
         idBovine = _idBovine;
-        idVeterinary = _idVeterinary;
+        idUser = _idUser;
         appointmentDate = _appointmentDate;
         appointmentType = _appointmentType;
         cost = _cost;
         observation = _observation;
     }
 
-    function setUpdate(int _idBovine,int _idVeterinary, string memory _appointmentDate) public {
+    function setUpdate(uint256 _idBovine, uint256 _idUser, uint256 _appointmentDate) public {
         idBovine = _idBovine;
-        idVeterinary = _idVeterinary;
+        idUser = _idUser;
         appointmentDate = _appointmentDate;
     }
 
-    function setIDBovine(int _idBovine) public {
+    function setIDBovine(uint256 _idBovine) public {
         idBovine = _idBovine;
     }
 
-    function getIDBovine() public view returns (int) {
+    function getIDBovine() public view returns (uint256)  {
         return idBovine;
     }
 
-    function setIDVeterinary(int _idVeterinary) public {
-        idVeterinary = _idVeterinary;
+    function setIDUser (uint256 _idUser) public {
+        idUser = _idUser;
     }
 
-    function getIDVeterinary() public view returns (int) {
-        return idVeterinary;
+    function getIDUser() public view returns (uint256)  {
+        return idUser;
     }
 
-    function setAppointmentDate(string memory _appointmentDate) public {
+    function setAppointmentDate(uint256 _appointmentDate) public {
         appointmentDate = _appointmentDate;
     }
 
-    function getAppointmentDate() public view returns (string memory) {
+    function getAppointmentDate() public view returns (uint256)  {
         return appointmentDate;
     }
 
@@ -62,11 +62,11 @@ contract Appointment{
         return appointmentType;
     }
 
-    function setCost(string memory _cost) public {
+    function setCost(uint256 _cost) public {
         cost = _cost;
     }
 
-    function getCost() public view returns (string memory) {
+    function getCost() public view returns (uint256) {
         return cost;
     }
 

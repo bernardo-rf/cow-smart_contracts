@@ -8,19 +8,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovine",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
-						"internalType": "int256",
-						"name": "_idVeterinary",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "_idUser",
+						"type": "uint256"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_appointmentDate",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
 						"internalType": "string",
@@ -28,9 +28,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_cost",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
 						"internalType": "string",
@@ -46,9 +46,9 @@
 				"name": "getAppointmentDate",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -72,9 +72,9 @@
 				"name": "getCost",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -85,9 +85,9 @@
 				"name": "getIDBovine",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -95,12 +95,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "getIDVeterinary",
+				"name": "getIDUser",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -122,9 +122,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_appointmentDate",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setAppointmentDate",
@@ -148,9 +148,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_cost",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setCost",
@@ -161,9 +161,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovine",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"name": "setIDBovine",
@@ -174,12 +174,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
-						"name": "_idVeterinary",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "_idUser",
+						"type": "uint256"
 					}
 				],
-				"name": "setIDVeterinary",
+				"name": "setIDUser",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -200,19 +200,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovine",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
-						"internalType": "int256",
-						"name": "_idVeterinary",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "_idUser",
+						"type": "uint256"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_appointmentDate",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setUpdate",
@@ -249,11 +249,11 @@
 	},
 	"sources": {
 		"contracts/Appointment.sol": {
-			"keccak256": "0xaf5d31992014617749dc59c4d9b981b721254a0d25e19c139588833158928307",
+			"keccak256": "0x6ed4e0c57792455d6422eeb80f8895a883ae2175904cc75b22d61061f7fb0ce1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://bd29b0200406efb1786da35e113a29bbd05f59ce0bf33def130dd98ff29055b3",
-				"dweb:/ipfs/Qmc3ETZEwzChYDZskD2Wb1YxD3asGnsq4i7DvRNEUZH4Ub"
+				"bzz-raw://a61e5f61d1ff2e516783cc80b202ef554cdf6734a7550713b642caac18b35c13",
+				"dweb:/ipfs/QmWZxZouCRn7FwNiMrp6xsJKJkfZZhsMLsqp3XPRxgWkPd"
 			]
 		}
 	},
