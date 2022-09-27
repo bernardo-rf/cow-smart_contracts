@@ -8,9 +8,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idUserType",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
 						"internalType": "string",
@@ -18,9 +18,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_birthDate",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
 						"internalType": "string",
@@ -38,9 +38,9 @@
 						"type": "bool"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_balance",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -64,9 +64,9 @@
 				"name": "getBalance",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -77,9 +77,9 @@
 				"name": "getBirthDate",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -103,9 +103,9 @@
 				"name": "getIDUserType",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -153,9 +153,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_balance",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setBalance",
@@ -166,9 +166,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_birthDate",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setBirthDate",
@@ -192,9 +192,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idUserType",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"name": "setIDUserType",
@@ -231,14 +231,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idUserType",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "_birthDate",
+						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
@@ -280,11 +280,11 @@
 	},
 	"sources": {
 		"contracts/User.sol": {
-			"keccak256": "0x49dcde54a197013574d13d686b6e5873b33fd220a7edb384cbcd6dabb67b91cb",
+			"keccak256": "0x44e414619c8444192b3aa5dfe6edd01c07cfc40828b0b7276374314c4abfe3e5",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9d1108db3f1dce4b5d51bd363d30f90eec4849fdfbaba0386deed304e6513bd3",
-				"dweb:/ipfs/QmQkzVZ9wj7HvVd5xvgUdYQbbhfKUt9kDTgfnagifQsXMc"
+				"bzz-raw://b56559555e9d6c5f458069102836c1c4d8f23b4559eb86163b6c950fc34779e6",
+				"dweb:/ipfs/QmTnRRG2FaLetPh82dUoXagmUxj48Vqsq5Z8c53QJ5CEyU"
 			]
 		}
 	},

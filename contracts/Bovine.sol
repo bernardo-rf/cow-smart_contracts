@@ -5,24 +5,24 @@ contract Bovine {
     
     string idOwner;
 
-    int idField;
+    uint256 idField;
 
-    int serialNumber;
+    uint256 serialNumber;
     
-    string birthDate;
+    uint256 birthDate;
 
     bool active;
 
     string observation;
 
-    int idBovineParentOne;
+    uint256 idBovineParentOne;
 
-    int idBovineParentTwo;
+    uint256 idBovineParentTwo;
 
     bool gender;
 
-    constructor(string memory _idOwner, int _idField, int _serialNumber, string memory _birthDate, bool _active, string memory _observation, 
-                int _idBovineParentOne, int _idBovineParentTwo, bool _gender) {
+    constructor(string memory _idOwner, uint256 _idField, uint256 _serialNumber, uint256 _birthDate, bool _active, string memory _observation, 
+                uint256 _idBovineParentOne, uint256 _idBovineParentTwo, bool _gender) {
         idOwner = _idOwner;
         idField = _idField;
         serialNumber = _serialNumber;
@@ -34,10 +34,15 @@ contract Bovine {
         gender = _gender;
     }
 
-    function setUpdate(string memory _idOwner, int _idField, bool _active) public {
-        idOwner = _idOwner;
+    function setUpdate(uint256 _idField, uint256 _serialNumber, uint256 _birthDate, bool _active, 
+        uint256 _idBovineParentOne, uint256 _idBovineParentTwo, bool _gender) public {
         idField = _idField;
+        serialNumber = _serialNumber;
+        birthDate = _birthDate;
         active = _active;
+        idBovineParentOne = _idBovineParentOne;
+        idBovineParentTwo = _idBovineParentTwo;
+        gender = _gender;
     }
 
     function setIDOwner(string memory _idOwner) public {
@@ -48,27 +53,27 @@ contract Bovine {
         return idOwner;
     }
 
-    function setIDField(int _idField) public {
+    function setIDField(uint256 _idField) public {
         idField = _idField;
     }
 
-    function getIDField() public view returns (int) {
+    function getIDField() public view returns (uint256) {
         return idField;
     }
 
-    function setSerialNumber(int _serialNumber) public {
+    function setSerialNumber(uint256 _serialNumber) public {
         serialNumber = _serialNumber;
     }
 
-    function getSerialNumber() public view returns (int) {
+    function getSerialNumber() public view returns (uint256) {
         return serialNumber;
     }
     
-    function setBirthDate(string memory _birthDate) public {
+    function setBirthDate(uint256 _birthDate) public {
         birthDate = _birthDate;
     }
 
-    function getBirthDate() public view returns (string memory) {
+    function getBirthDate() public view returns (uint256) {
         return birthDate;
     }
 
@@ -88,19 +93,19 @@ contract Bovine {
         return observation;
     }
 
-    function setIDBovineParentOne(int _idBovineParentOne) public {
+    function setIDBovineParentOne(uint256 _idBovineParentOne) public {
         idBovineParentOne = _idBovineParentOne;
     }
 
-    function getIDBovineParentOne() public view returns (int) {
+    function getIDBovineParentOne() public view returns (uint256) {
         return idBovineParentOne;
     }
 
-    function setIDBovineParentTwo(int _idBovineParentTwo) public {
+    function setIDBovineParentTwo(uint256 _idBovineParentTwo) public {
         idBovineParentTwo = _idBovineParentTwo;
     }
 
-    function getIDBovineParentTwo() public view returns (int) {
+    function getIDBovineParentTwo() public view returns (uint256) {
         return idBovineParentTwo;
     }
 

@@ -5,9 +5,9 @@ contract Field {
 
     string fieldDescription;
 
-    string latitude;
+    uint256 latitude;
 
-    string longitude;
+    uint256 longitude;
 
     bool active;
 
@@ -15,7 +15,7 @@ contract Field {
 
     string idOwner;
 
-    constructor(string memory _fieldDescription, string memory _latitude, string memory _longitude, bool _active, string memory _observation, string memory _idOwner) {
+    constructor(string memory _fieldDescription, uint256 _latitude, uint256 _longitude, bool _active, string memory _observation, string memory _idOwner) {
         fieldDescription = _fieldDescription;
         latitude = _latitude;
         longitude = _longitude;
@@ -24,12 +24,10 @@ contract Field {
         idOwner = _idOwner;
     }
 
-    function setUpdate(string memory _fieldDescription, string memory _latitude, string memory _longitude, bool _active, string memory _idOwner) public {
-        fieldDescription = _fieldDescription;
+    function setUpdate(uint256 _latitude,uint256 _longitude, bool _active) public {
         latitude = _latitude;
         longitude = _longitude;
         active = _active;
-        idOwner = _idOwner;
     }
 
     function setFieldDescription(string memory _fieldDescription) public {
@@ -40,19 +38,19 @@ contract Field {
         return fieldDescription;
     }
 
-    function setLatitude(string memory _latitude) public {
+    function setLatitude(uint256 _latitude) public {
         latitude = _latitude;
     }
 
-    function getLatitude() public view returns (string memory) {
+    function getLatitude() public view returns (uint256) {
         return latitude;
     }
 
-      function setLongitude(string memory _longitude) public {
+      function setLongitude(uint256 _longitude) public {
         longitude = _longitude;
     }
 
-    function getLongitude() public view returns (string memory) {
+    function getLongitude() public view returns (uint256) {
         return longitude;
     }
 

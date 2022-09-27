@@ -13,14 +13,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_latitude",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_longitude",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
@@ -85,9 +85,9 @@
 				"name": "getLatitude",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -98,9 +98,9 @@
 				"name": "getLongitude",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -161,9 +161,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_latitude",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setLatitude",
@@ -174,9 +174,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_longitude",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setLongitude",
@@ -200,29 +200,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_fieldDescription",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_latitude",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_longitude",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
 						"name": "_active",
 						"type": "bool"
-					},
-					{
-						"internalType": "string",
-						"name": "_idOwner",
-						"type": "string"
 					}
 				],
 				"name": "setUpdate",
@@ -259,11 +249,11 @@
 	},
 	"sources": {
 		"contracts/Field.sol": {
-			"keccak256": "0x56d3344c6a593fe4c7c90ed8032f6ae08d93b440e65c4068a5296ef36e3a5731",
+			"keccak256": "0x6067d39dbb0840b03f1b58d08706d1cd4d56a3249bd0d917e18cad22dff5f586",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://06f261f5ebc8d9791058c3a4820a6036633e4b840b003cb81632c7be9d342173",
-				"dweb:/ipfs/QmWV5QP2d8AAitCyeiWGfdtEZRr5AYobtJxfpmfY6t393D"
+				"bzz-raw://698be3b6a5f1eddd87870a1f28d7d316f0a5e8af524943a164ba5ed61f490591",
+				"dweb:/ipfs/QmXcCpMDZSNZynnJLeQUQW7sLZAEWrsr5cUPqbFLYwSr7v"
 			]
 		}
 	},

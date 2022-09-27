@@ -3,11 +3,11 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract User {
 
-    int idUserType;
+    uint256 idUserType;
 
     string name;
 
-    string birthDate;
+    uint256 birthDate;
 
     string email;
 
@@ -15,9 +15,9 @@ contract User {
 
     bool active;
 
-    string balance;
+    uint256 balance;
 
-    constructor(int _idUserType, string memory _name, string memory _birthDate, string memory _email, string memory _password, bool _active, string memory _balance) {
+    constructor(uint256 _idUserType, string memory _name, uint256 _birthDate, string memory _email, string memory _password, bool _active, uint256 _balance) {
         idUserType = _idUserType;
         name = _name;
         birthDate = _birthDate;
@@ -27,17 +27,17 @@ contract User {
         balance = _balance;
     }
 
-    function setUpdate(int _idUserType, string memory _name, bool _active) public {
+    function setUpdate(uint256 _idUserType, uint256 _birthDate, bool _active) public {
         idUserType = _idUserType;
-        name = _name;
+        birthDate = _birthDate;
         active = _active;
     }
 
-    function setIDUserType(int _idUserType) public {
+    function setIDUserType(uint256 _idUserType) public {
         idUserType = _idUserType;
     }
 
-    function getIDUserType() public view returns (int) {
+    function getIDUserType() public view returns (uint256) {
         return idUserType;
     }
 
@@ -49,11 +49,11 @@ contract User {
         return name;
     }
 
-    function setBirthDate(string memory _birthDate) public {
+    function setBirthDate(uint256 _birthDate) public {
         birthDate = _birthDate;
     }
 
-    function getBirthDate() public view returns (string memory) {
+    function getBirthDate() public view returns (uint256) {
         return birthDate;
     }
 
@@ -81,11 +81,11 @@ contract User {
         return active;
     }
 
-    function setBalance(string memory _balance) public {
+    function setBalance(uint256 _balance) public {
         balance = _balance;
     }
 
-    function getBalance() public view returns (string memory) {
+    function getBalance() public view returns (uint256) {
         return balance;
     }
 }

@@ -13,19 +13,19 @@
 						"type": "string"
 					},
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idField",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_serialNumber",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_birthDate",
-						"type": "string"
+						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
@@ -38,14 +38,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovineParentOne",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovineParentTwo",
-						"type": "int256"
+						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
@@ -74,9 +74,9 @@
 				"name": "getBirthDate",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -100,9 +100,9 @@
 				"name": "getIDBovineParentOne",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -113,9 +113,9 @@
 				"name": "getIDBovineParentTwo",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -126,9 +126,9 @@
 				"name": "getIDField",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -165,9 +165,9 @@
 				"name": "getSerialNumber",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -189,9 +189,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "_birthDate",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"name": "setBirthDate",
@@ -215,9 +215,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovineParentOne",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"name": "setIDBovineParentOne",
@@ -228,9 +228,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idBovineParentTwo",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"name": "setIDBovineParentTwo",
@@ -241,9 +241,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_idField",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"name": "setIDField",
@@ -280,9 +280,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "_serialNumber",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"name": "setSerialNumber",
@@ -293,18 +293,38 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_idOwner",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "_idField",
+						"type": "uint256"
 					},
 					{
-						"internalType": "int256",
-						"name": "_idField",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "_serialNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_birthDate",
+						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
 						"name": "_active",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_idBovineParentOne",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_idBovineParentTwo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_gender",
 						"type": "bool"
 					}
 				],
@@ -342,11 +362,11 @@
 	},
 	"sources": {
 		"contracts/Bovine.sol": {
-			"keccak256": "0xc08d29d3032b12d94d17b71867c9504bc3056699f00c4028f329cd75bb3cff90",
+			"keccak256": "0x2612d1a8ab910e25eb14017279ccc4efe1d73c6375831a7a093c8045b62bcd2a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b8eec3cfb5a610261d2cad42321b0e0c1ef63aa1ead1913d56b439d148173e77",
-				"dweb:/ipfs/QmWqqEbrmwmNVTZif2ERSo6pAKWRbspDaWE8in4jRJQQU5"
+				"bzz-raw://706c440b2d00ef28b7332969519095476050ebcbf12051b6e793c931be820b6c",
+				"dweb:/ipfs/Qmc4daXfxGt5NTc31P6STCei7J4aageLFCgUJbA6ZsbY2g"
 			]
 		}
 	},
