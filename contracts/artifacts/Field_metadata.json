@@ -13,14 +13,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_latitude",
-						"type": "uint256"
+						"type": "string"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_longitude",
-						"type": "uint256"
+						"type": "string"
 					},
 					{
 						"internalType": "bool",
@@ -85,9 +85,9 @@
 				"name": "getLatitude",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -98,9 +98,9 @@
 				"name": "getLongitude",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -161,9 +161,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_latitude",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"name": "setLatitude",
@@ -174,9 +174,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_longitude",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"name": "setLongitude",
@@ -199,16 +199,6 @@
 			},
 			{
 				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_latitude",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_longitude",
-						"type": "uint256"
-					},
 					{
 						"internalType": "bool",
 						"name": "_active",
@@ -249,11 +239,11 @@
 	},
 	"sources": {
 		"contracts/Field.sol": {
-			"keccak256": "0x6067d39dbb0840b03f1b58d08706d1cd4d56a3249bd0d917e18cad22dff5f586",
+			"keccak256": "0x818f32eb33c905af51bdff2ff0393d5de391ddbd8e0f7371294f4fe46d331d7d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://698be3b6a5f1eddd87870a1f28d7d316f0a5e8af524943a164ba5ed61f490591",
-				"dweb:/ipfs/QmXcCpMDZSNZynnJLeQUQW7sLZAEWrsr5cUPqbFLYwSr7v"
+				"bzz-raw://38f4b1dab2eddf420cebfa4e5fe65f152edb51368350746ab697aae78d9f5e52",
+				"dweb:/ipfs/QmTonwEwKpDcBmX3Prny8hWHUmMR11SNCLCQyX18dayi5y"
 			]
 		}
 	},
