@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idAuction",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_idBidder",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_bidDate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBidDate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIDAuction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIDBidder",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_bidDate",
+						"type": "uint256"
+					}
+				],
+				"name": "setBidDate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idAuction",
+						"type": "uint256"
+					}
+				],
+				"name": "setIDAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idBidder",
+						"type": "string"
+					}
+				],
+				"name": "setIDBidder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bid.sol": "Bid"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bid.sol": {
+			"keccak256": "0x21292da86bd9b9dc14e2d15b40c841c4af2b21e2a5887d29a801db4ec9e625b6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://487b3830298661a95ce2fb572c09889d8fc8ae26d03bb7c884e9cce296ee5a6c",
+				"dweb:/ipfs/QmQ9tuBAAKAETZryjdapSEHaDBa19TiCPmrpCYdV1XTv54"
+			]
+		}
+	},
+	"version": 1
+}

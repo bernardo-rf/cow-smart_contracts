@@ -4,197 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_idBovine",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_idOwner",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_auctionDescription",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_startDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_endDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint32",
-						"name": "_status",
-						"type": "uint32"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getEndDate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getIDBovine",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getIDOwner",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getStartDate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getStatus",
-				"outputs": [
-					{
-						"internalType": "uint32",
-						"name": "",
-						"type": "uint32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_endDate",
-						"type": "uint256"
-					}
-				],
-				"name": "setEndDate",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_idBovine",
-						"type": "uint256"
-					}
-				],
-				"name": "setIDBovine",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_idOwner",
-						"type": "string"
-					}
-				],
-				"name": "setIDOwner",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_startDate",
-						"type": "uint256"
-					}
-				],
-				"name": "setStartDate",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint32",
-						"name": "_status",
-						"type": "uint32"
-					}
-				],
-				"name": "setStatus",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_idBovine",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_startDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_endDate",
-						"type": "uint256"
-					}
-				],
-				"name": "setUpdate",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -208,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Auction.sol": "Auction"
+			"contracts/Bid.sol": "Auction"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -222,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Auction.sol": {
-			"keccak256": "0x5d088aa99b05ba6ed8a40e325b79851d42272be125825d6b0153d917beb0e467",
+		"contracts/Bid.sol": {
+			"keccak256": "0x4da6688054feda8723af59c8b6d68e9d4a3daf2f48d10a21b37df788356a25ae",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0c1c0d80991670752920dbf3cf99716473abf3f7fac808c7054bacd01059971b",
-				"dweb:/ipfs/QmXVugNTcvhd7WgpoRvK8vKwGToMFhxBF9Km9qNFF1Q9hZ"
+				"bzz-raw://a9cc1f5a4a756fea22011df144ed544e92a7c42fa86639ba16ad1c9fb6938a7c",
+				"dweb:/ipfs/QmRfHHMV54XwAr98ky1zFBNXF6qJmLGjC5SrQnKho2w7jp"
 			]
 		}
 	},
