@@ -7,45 +7,36 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-
-contract Field is ERC721{
+contract Field {
     
-    mapping(uint256 => string) public idOwner;
+    string public idOwner;
 
-    mapping(uint256 => string) public fieldDescription;
+    string public fieldDescription;
 
-    mapping(uint256 => string) public latitude;
+    string public latitude;
 
-    mapping(uint256 => string) public longitude; 
+    string public longitude; 
     
-    mapping(uint256 => bool) public active;
+    bool public active;
 
-    mapping(uint256 => string) public observation; 
+    string public observation;
 
-    uint256 private totalSupply = 0;
-
-    constructor () ERC721('CFLD', 'CFLD') { }
-
-    function mint(string memory _idOwner, string memory _fieldDescription, string memory _latitude, string memory _longitude, bool _active, string memory _observation) public {
+    constructor(string memory _idOwner, string memory _fieldDescription, string memory _latitude, string memory _longitude, bool _active, string memory _observation) {
         
-        uint256 tokenId = totalSupply + 1;
-        idOwner[tokenId] = _idOwner;
-        fieldDescription[tokenId] = _fieldDescription;
-        latitude[tokenId] = _latitude;
-        longitude[tokenId] = _longitude;
-        active[tokenId] = _active;
-        observation[tokenId] = _observation;
-
-         _safeMint(msg.sender, tokenId);
-        totalSupply += 1;
+        idOwner = _idOwner;
+        fieldDescription = _fieldDescription;
+        latitude = _latitude;
+        longitude = _longitude;
+        active = _active;
+        observation = _observation;
     }
 
-    function setUpdate(uint256 _tokenId, string memory _fieldDescription, string memory _latitude, string memory _longitude, bool _active, string memory _observation) public {
-        fieldDescription[_tokenId] = _fieldDescription;
-        latitude[_tokenId] = _latitude;
-        longitude[_tokenId] = _longitude;
-        active[_tokenId] = _active;
-        observation[_tokenId] = _observation;
+    function setUpdate(string memory _idOwner, string memory _fieldDescription, string memory _latitude, string memory _longitude, bool _active, string memory _observation) public {
+        idOwner = _idOwner;
+        fieldDescription = _fieldDescription;
+        latitude = _latitude;
+        longitude = _longitude;
+        active = _active;
+        observation = _observation;
     }
 }
