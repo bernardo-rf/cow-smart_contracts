@@ -7,36 +7,36 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+contract Appointment {
 
-contract Appointment is ERC721{
+    uint256 public idBovine;
 
-    mapping(uint256 => uint256) public idBovine;
+    uint256 public idVeterinary;
 
-    mapping(uint256 => uint256) public idUser;
+    uint256 public appointmentDate;
 
-    mapping(uint256 => uint256) public appointmentDate;
+    string public appointmentType;
 
-    mapping(uint256 => string) public appointmentType;
+    string public observation;
 
-    mapping(uint256 => string) public observation;
+    constructor (uint256 _idBovine, uint256 _idVeterinary, uint256 _appointmentDate,string memory _appointmentType, string memory _observation) { 
+        require(isValueNotZero(_idBovine) && isValueNotZero(_idVeterinary) && isValueNotZero(_appointmentDate) && isStringNotEmpty(_appointmentType) && isStringNotEmpty(_observation), "COW: Invalid arguments.");
 
-    uint256 private totalSupply = 0;
+        idBovine = _idBovine;
+        idVeterinary = _idVeterinary;
+        appointmentDate = _appointmentDate;
+        appointmentType = _appointmentType;
+        observation = _observation;
+    }
 
-    constructor () ERC721('CAPP', 'CAPP') { }
+    function setUpdate(uint256 _idBovine, uint256 _idVeterinary, uint256 _appointmentDate,string memory _appointmentType, string memory _observation) public { 
+        require(isValueNotZero(_idBovine) && isValueNotZero(_idVeterinary) && isValueNotZero(_appointmentDate) && isStringNotEmpty(_appointmentType) && isStringNotEmpty(_observation), "COW: Invalid arguments.");
 
-    function mint(uint256 _idBovine, uint256 _idUser, uint256 _appointmentDate,string memory _appointmentType, string memory _observation) public {
-        require(isValueNotZero(_idBovine) && isValueNotZero(_idUser) && isValueNotZero(_appointmentDate) && isStringNotEmpty(_appointmentType) && isStringNotEmpty(_observation), "COW: Invalid arguments.");
-
-        uint256 tokenId = totalSupply + 1;
-        idBovine[tokenId] = _idBovine;
-        idUser[tokenId] = _idUser;
-        appointmentDate[tokenId] = _appointmentDate;
-        appointmentType[tokenId] = _appointmentType;
-        observation[tokenId] = _observation;
-
-        _safeMint(msg.sender, tokenId);
-        totalSupply += 1;
+        idBovine = _idBovine;
+        idVeterinary = _idVeterinary;
+        appointmentDate = _appointmentDate;
+        appointmentType = _appointmentType;
+        observation = _observation;
     }
 
     function isStringNotEmpty(string memory _data) internal pure returns (bool) {
@@ -45,11 +45,5 @@ contract Appointment is ERC721{
 
     function isValueNotZero(uint256 _value) internal pure returns (bool) {
         return _value != 0;
-    }
-
-    function setUpdate(uint256 _tokenId, uint256 _idBovine, uint256 _idUser, uint256 _appointmentDate) public {
-        idBovine[_tokenId] = _idBovine;
-        idUser[_tokenId] = _idUser;
-        appointmentDate[_tokenId] = _appointmentDate;
     }
 }
